@@ -1,46 +1,50 @@
-@media  (min-width:200px) and (max-width:400px){
-    body{
-        background-color: aqua;
-    }
-    p{
-        font-size: 2rem;
-    }
-    img{
-        border-radius: 20vw;
-
-    }
+.A{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-@media (min-width:401px) and (max-width:600px){
-    body{
-        background-color: yellow;
-    }
-    p{
-        font-size: 4rem;
-    
-    }
-    img{
-        border-radius: 40vw;
-    }
+.B{
+    display: flex;
+    gap: 10px;
 }
-@media (min-width:601px) and (max-width:800px){
-    body{
-        background-color: green;
-    }
-    p{
-        font-size: 8rem;
-    }
-    img{
-        border-radius: 60vw;
-    }
-}
-@media (min-width:900px) and (max-width:1441){
+@media (min-width:300px) and (max-width:600px){
     body{
         background-color: red;
     }
-    p{
-        font-size: 10rem;
+    .A{
+        justify-content: center;
+        flex-direction: column;
     }
-    img{
-        border-radius: 90vw;
+    .B{
+        justify-content: center;
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+}
+@media screen and (min-width:601px) and (max-width:1440px){
+    body{
+        background-color: yellow;
+    }
+    .A{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .B{
+        justify-content: center;
+        flex-direction: row;
+        /* gap: 10px; */
+    }
+}
+@media (min-width:1441px) and (max-width:2560px){
+    body{
+        background-color: aquamarine;
+    }
+    .A{
+        justify-content: center;
+        flex-direction: row;
+    }
+    .B{
+        justify-content: center;
+        flex-direction: row;
     }
 }
